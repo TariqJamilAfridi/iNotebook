@@ -53,11 +53,7 @@ router.post(
                 }
             }
             const authtoken = jwt.sign(data, JWT_SECRET);
-<<<<<<< HEAD
-            //console.log(authtoken);
-=======
             console.log(authtoken);
->>>>>>> eced787b9105576d50df6f8eccbf1ed250768b06
             res.json({ authtoken });
 
             // Send response to Postman
@@ -68,11 +64,7 @@ router.post(
             //       });
 
         } catch (error) {
-<<<<<<< HEAD
-            //console.error(error);
-=======
             console.error(error);
->>>>>>> eced787b9105576d50df6f8eccbf1ed250768b06
 
             res.status(500).json({
                 success: false,
@@ -100,11 +92,7 @@ router.post(
                 errors: errors.array()
             });
         }
-<<<<<<< HEAD
-        //console.log(req.body);
-=======
         console.log(req.body);
->>>>>>> eced787b9105576d50df6f8eccbf1ed250768b06
         const { email, password } = req.body;
         try {
             let user = await User.findOne({ email });
@@ -131,11 +119,7 @@ router.post(
             res.json({ authtoken });
 
         } catch (error) {
-<<<<<<< HEAD
-            //console.error(error);
-=======
             console.error(error);
->>>>>>> eced787b9105576d50df6f8eccbf1ed250768b06
 
             res.status(500).json({
                 success: false,
@@ -153,11 +137,7 @@ router.post(
             res.send(user);
 
         } catch (error) {
-<<<<<<< HEAD
-            //console.error(error);
-=======
             console.error(error);
->>>>>>> eced787b9105576d50df6f8eccbf1ed250768b06
 
             res.status(500).json({
                 success: false,
